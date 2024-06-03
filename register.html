@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - My E-commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center py-4">
+            <a href="#" class="text-2xl font-bold text-gray-800">My Store</a>
+            <div>
+                <a href="/register" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Register</a>
+                <a href="/login" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Login</a>
+                <a href="/cart" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900">Cart</a>
+            </div>
+        </nav>
+
+        <!-- Registration Form -->
+        <section class="max-w-md mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Register</h2>
+            <form action="/register-submit" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700">Username</label>
+                    <input type="text" id="username" name="username" class="mt-1 px-4 py-2 w-full border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" class="mt-1 px-4 py-2 w-full border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 px-4 py-2 w-full border rounded-lg">
+                </div>
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Register</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
